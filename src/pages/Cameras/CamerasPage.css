@@ -1,0 +1,53 @@
+.cameras-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(520px, 100%), 1fr));
+  gap: 20px;
+}
+
+.camera-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 14px;
+  background: #0b0f14;
+  border: 1px solid #1d2733;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.camera-card__side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+}
+
+.camera-card__location {
+  font-size: 12px;
+  color: #6d7887;
+  margin-bottom: 8px;
+}
+
+.camera-card__controls label {
+  margin-bottom: 10px;
+}
+
+.camera-card__buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.camera-card__buttons .btn {
+  flex: 1;
+  font-size: 12px;
+  padding: 8px 10px;
+}
+
+@media (max-width: 720px) {
+  .cameras-grid {
+    grid-template-columns: 1fr;
+  }
+  .camera-card {
+    grid-template-columns: 1fr;
+  }
+}

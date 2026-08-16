@@ -1,0 +1,47 @@
+.dashboard__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.dashboard__section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.dashboard__section-header h2 {
+  font-size: 15px;
+  color: #e7ecf3;
+}
+
+.dashboard__link {
+  font-size: 13px;
+  color: #7aa2ff;
+  text-decoration: none;
+}
+
+.dashboard__link:hover {
+  text-decoration: underline;
+}
+
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+  gap: 20px;
+}
+
+.dashboard__pair {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  align-items: stretch;
+}
+
+@media (max-width: 640px) {
+  .dashboard__pair {
+    grid-template-columns: 1fr;
+  }
+}

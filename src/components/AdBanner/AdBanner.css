@@ -1,0 +1,46 @@
+.ad-banner {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #101823;
+  border: 1px solid #1d2733;
+  height: 100%;
+}
+
+.ad-banner__media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.ad-banner__info {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ad-banner__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e7ecf3;
+}
+
+.ad-banner__duration {
+  font-size: 11px;
+  color: #6d7887;
+}
+
+.ad-banner--empty {
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  color: #55606f;
+  font-size: 12px;
+  text-align: center;
+  padding: 16px;
+  border: 1px dashed #263141;
+  background: transparent;
+}

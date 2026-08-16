@@ -1,0 +1,72 @@
+.monitors-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.monitor-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  align-items: center;
+  gap: 16px;
+  background: #0b0f14;
+  border: 1px solid #1d2733;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.monitor-row__main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.monitor-row__status {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #55606f;
+  flex-shrink: 0;
+}
+
+.monitor-row__status.is-online {
+  background: #51cf66;
+  box-shadow: 0 0 0 3px rgba(81, 207, 102, 0.15);
+}
+
+.monitor-row__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e7ecf3;
+}
+
+.monitor-row__location {
+  font-size: 12px;
+  color: #6d7887;
+}
+
+.monitor-row__field {
+  margin-bottom: 0;
+}
+
+.monitor-row__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.monitor-row__actions .btn {
+  font-size: 12px;
+  padding: 8px 10px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .monitor-row {
+    grid-template-columns: 1fr;
+  }
+  .monitor-row__actions {
+    flex-wrap: wrap;
+  }
+}

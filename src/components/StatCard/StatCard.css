@@ -1,0 +1,38 @@
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #101823;
+  border: 1px solid #1d2733;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.stat-card__icon {
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(122, 162, 255, 0.1);
+  border-radius: 10px;
+}
+
+.stat-card__value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e7ecf3;
+  line-height: 1.2;
+}
+
+.stat-card__label {
+  font-size: 12px;
+  color: #8a94a3;
+}
+
+.stat-card__hint {
+  font-size: 11px;
+  color: #55606f;
+  margin-top: 2px;
+}

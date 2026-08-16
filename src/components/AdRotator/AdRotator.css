@@ -1,0 +1,55 @@
+.ad-rotator {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #05070a;
+  overflow: hidden;
+}
+
+.ad-rotator__media {
+  width: 100%;
+  height: 100%;
+  /* contain, не cover: панель под рекламу может оказаться любых пропорций
+     (узкая колонка на ТВ, широкая полоса на мобильном) — крео нельзя обрезать. */
+  object-fit: contain;
+  display: block;
+}
+
+.ad-rotator__caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 24px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent);
+  color: #fff;
+  font-size: clamp(14px, 2.4vw, 26px);
+  font-weight: 700;
+}
+
+.ad-rotator__dots {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 6px;
+}
+
+.ad-rotator__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.ad-rotator__dot.is-active {
+  background: #fff;
+}
+
+.ad-rotator--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #55606f;
+  font-size: 14px;
+}

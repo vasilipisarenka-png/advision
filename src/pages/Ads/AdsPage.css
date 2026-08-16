@@ -1,0 +1,88 @@
+.ads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.ad-card {
+  background: #0b0f14;
+  border: 1px solid #1d2733;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ad-card--inactive {
+  opacity: 0.55;
+}
+
+.ad-card__media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.ad-card__body {
+  padding: 12px 14px;
+}
+
+.ad-card__title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ad-card__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e7ecf3;
+}
+
+.ad-card__status {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #8a94a3;
+  background: rgba(138, 148, 163, 0.12);
+  padding: 3px 7px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.ad-card__status.is-active {
+  color: #51cf66;
+  background: rgba(81, 207, 102, 0.12);
+}
+
+.ad-card__meta {
+  font-size: 11px;
+  color: #6d7887;
+  margin: 6px 0 12px;
+}
+
+.ad-card__buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.ad-card__buttons .btn {
+  flex: 1;
+  font-size: 12px;
+  padding: 8px 10px;
+}
+
+.ads-page__preview {
+  margin-bottom: 14px;
+}
+
+.ads-page__preview img,
+.ads-page__preview video {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #263141;
+  display: block;
+  margin-bottom: 8px;
+}

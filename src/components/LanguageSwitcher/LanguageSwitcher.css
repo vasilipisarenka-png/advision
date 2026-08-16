@@ -1,0 +1,34 @@
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: #131c27;
+  border: 1px solid #263141;
+  border-radius: 8px;
+  padding: 3px;
+  flex-shrink: 0;
+}
+
+.lang-switcher__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  background: transparent;
+  color: #8a94a3;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lang-switcher__item:hover {
+  color: #e7ecf3;
+}
+
+.lang-switcher__item.is-active {
+  background: rgba(122, 162, 255, 0.16);
+  color: #7aa2ff;
+}
