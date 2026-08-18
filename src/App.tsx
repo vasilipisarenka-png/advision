@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { StoreProvider } from './stores/StoreContext';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import AppLayout from './components/Layout/AppLayout';
@@ -12,9 +12,11 @@ import MonitorsPage from './pages/Monitors/MonitorsPage';
 import DisplayPage from './pages/Display/DisplayPage';
 import NotFoundPage from './pages/NotFound/NotFoundPage';
 
+// HashRouter — сайт хостится на GitHub Pages (статика без server-side rewrite),
+// поэтому прямой заход/обновление на вложенный путь через BrowserRouter дал бы 404.
 const App: React.FC = () => (
   <StoreProvider>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
@@ -36,7 +38,7 @@ const App: React.FC = () => (
         <Route path="/404" element={<NotFoundPage />} />
         <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StoreProvider>
 );
 

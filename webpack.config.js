@@ -9,7 +9,9 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: isProd ? 'js/[name].[contenthash].js' : 'js/[name].js',
-      publicPath: '/',
+      // 'auto' — прод-сборка публикуется на GitHub Pages в подпапке /advision/,
+      // а не в корне домена; webpack сам определит базовый путь по адресу бандла.
+      publicPath: isProd ? 'auto' : '/',
       clean: true,
     },
     devtool: isProd ? 'source-map' : 'eval-source-map',
