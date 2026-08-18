@@ -14,7 +14,7 @@ export const mockCameras: Camera[] = [
     id: 'cam-2',
     name: 'Парковка',
     location: 'Москва, ул. Тверская 12',
-    streamUrl: 'http://192.168.1.10:1984/stream.html?src=cam2',
+    streamUrl: 'https://councils-personals-treat-limit.trycloudflare.com/stream.html?src=carwash_cam&mode=webrtc',
     status: 'online',
     adId: 'ad-2',
   },
