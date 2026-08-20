@@ -1,11 +1,11 @@
 export type Locale = 'ru' | 'en' | 'lt';
 
-export const DEFAULT_LOCALE: Locale = 'ru';
+export const DEFAULT_LOCALE: Locale = 'en';
 
 export const LOCALES: Array<{ code: Locale; label: string; flag: string }> = [
-  { code: 'ru', label: 'Русский', flag: '🇷🇺' },
   { code: 'en', label: 'English', flag: '🇬🇧' },
   { code: 'lt', label: 'Lietuvių', flag: '🇱🇹' },
+  { code: 'ru', label: 'Русский', flag: '🇷🇺' },
 ];
 
 export type TranslationTree = { [key: string]: string | TranslationTree };
